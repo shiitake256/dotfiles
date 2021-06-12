@@ -32,7 +32,7 @@ shopt -s histappend
 PROMPT_COMMAND="history -a; history -c; history -r; "$PROMPT_COMMAND; 
 
 # direnv
-eval "$(direnv hook bash)"
+# eval "$(direnv hook bash)"
 
 # kubectl
 source <(kubectl completion bash)
@@ -41,7 +41,7 @@ source <(kubectl completion bash)
 source <(kompose completion bash)
 
 # crictl
-source <(crictl completion bash)
+# source <(crictl completion bash)
 
 # helm
 source <(helm completion bash)
