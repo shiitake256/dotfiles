@@ -14,6 +14,10 @@ if ! [[ "$PATH" =~ "$HOME/.poetry/bin:" ]]
 then
     PATH="$HOME/.poetry/bin:$PATH"
 fi
+
+# krew
+PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 export PATH
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
