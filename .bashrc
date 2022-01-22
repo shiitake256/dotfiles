@@ -10,6 +10,11 @@ fi
 # User specific aliases and functions
 alias xclip='xclip -selection clipboard'
 
+load-secrets(){
+    export GITEA_API_TOKEN=$(secret-tool lookup env GITEA_API_TOKEN)
+    export GITEA_ROOT_URL=$(secret-tool lookup env GITEA_ROOT_URL)
+}
+
 #HISTSIZE
 HISTSIZE=100000
 
