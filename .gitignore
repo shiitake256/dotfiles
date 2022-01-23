@@ -1,0 +1,10 @@
+# 全てをignore
+*
+# ディレクトリをホワイトリストに追加する
+#!*/
+# ホワイトリストに入れたいファイルを個別に許可する
+!.gitignore
+!.bash_profile
+!.bashrc
+!.vimrc
+!.tmux.conf

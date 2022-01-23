@@ -6,24 +6,14 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
-then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-fi
-if ! [[ "$PATH" =~ "$HOME/.poetry/bin:" ]]
-then
-    PATH="$HOME/.poetry/bin:$PATH"
-fi
-
-# krew
-PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-
-export PATH
-
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+alias xclip='xclip -selection clipboard'
+
+load-secrets(){
+    export GITEA_API_TOKEN=$(secret-tool lookup env GITEA_API_TOKEN)
+    export GITEA_ROOT_URL=$(secret-tool lookup env GITEA_ROOT_URL)
+}
 
 #HISTSIZE
 HISTSIZE=100000
@@ -37,7 +27,7 @@ PROMPT_COMMAND="history -a; history -c; history -r; "$PROMPT_COMMAND;
 # kubectl
 source <(kubectl completion bash)
 
-# kubectl
+# kompose
 source <(kompose completion bash)
 
 # crictl
