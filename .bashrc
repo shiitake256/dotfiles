@@ -9,8 +9,6 @@ fi
 
 # User specific aliases and functions
 alias xclip='xclip -selection clipboard'
-alias ej='trans en:ja -b -j --'
-alias je='trans ja:en -b -j --'
 
 load-secrets(){
     export GITEA_API_TOKEN=$(secret-tool lookup env GITEA_API_TOKEN)

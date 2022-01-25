@@ -1,2 +1,4 @@
 #!/bin/bash
-git ls-files -z | rsync --files-from=- -abv0  . ~
+git ls-files | while read; do
+    ln -sfv $(readlink -f "$REPLY") ~/
+done
