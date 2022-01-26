@@ -1,8 +1,7 @@
-# 全てをignore
 *
-# ディレクトリをホワイトリストに追加する
-#!*/
-# ホワイトリストに入れたいファイルを個別に許可する
+!/.vim/
+!/.vim/**
+/.vim/.netrwhist
 !.gitignore
 !.bash_profile
 !.bashrc
