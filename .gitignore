@@ -2,9 +2,9 @@
 !/.vim/
 !/.vim/**
 /.vim/.netrwhist
-!.gitignore
-!.bash_profile
-!.bashrc
-!.vimrc
-!.tmux.conf
-!.install_dotfiles.sh
+!/.gitignore
+!/.bash_profile
+!/.bashrc
+!/.vimrc
+!/.tmux.conf
+!/.install_dotfiles.sh
