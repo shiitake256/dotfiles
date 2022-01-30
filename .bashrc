@@ -50,3 +50,6 @@ if [ -f `which powerline-daemon` ]; then
 fi
 
 alias vim='gvim -v'
+
+# AWS
+complete -C /home/user06/.local/bin/aws_completer aws
