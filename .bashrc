@@ -11,6 +11,7 @@ fi
 alias xclip='xclip -selection clipboard'
 alias ej='trans en:ja -b -j --'
 alias je='trans ja:en -b -j --'
+alias aws='AWS_ACCESS_KEY_ID=$(secret-tool lookup env aws-access-key-id) AWS_SECRET_ACCESS_KEY=$(secret-tool lookup env aws-secret-access-key) aws'
 
 load-secrets(){
     export GITEA_API_TOKEN=$(secret-tool lookup env GITEA_API_TOKEN)
