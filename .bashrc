@@ -53,4 +53,4 @@ fi
 alias vim='gvim -v'
 
 # AWS
-complete -C /home/user06/.local/bin/aws_completer aws
+complete -C /usr/local/bin/aws_completer aws
