@@ -31,7 +31,7 @@ export PIPENV_VENV_IN_PROJECT=1
 
 export EDITOR=vim
 
-export MANPAGER="vim -M +MANPAGER -c 'set nomod noma foldmethod=indent foldlevel=1000' -"
+export MANPAGER="vim -M +MANPAGER +'set nomodified nomodifiable foldmethod=indent foldlevel=1000' -"
 
 # AWS
 export AWS_DEFAULT_REGION='ap-northeast-1'
