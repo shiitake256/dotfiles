@@ -35,3 +35,6 @@ export MANPAGER="vim -M +MANPAGER +'set nomodified nomodifiable foldmethod=inden
 
 # AWS
 export AWS_DEFAULT_REGION='ap-northeast-1'
+
+# Homebrew
+eval "$(~/.linuxbrew/bin/brew shellenv)"
