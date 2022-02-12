@@ -5,7 +5,7 @@ set cursorcolumn
 set hlsearch
 set smartindent
 set list
-set listchars=tab:→\ ,trail:˽,eol:↲,extends:»,precedes:«,nbsp:%
+set listchars=tab:→\ ,trail:˽,eol:↲,extends:»,precedes:«,nbsp:%,space:˽
 set shiftwidth=4
 set clipboard&
 set clipboard^=unnamedplus
