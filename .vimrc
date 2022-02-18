@@ -29,3 +29,5 @@ endfunction
 
 nnoremap <silent> <Left>  :call MoveAndFoldLeft()<cr>
 nnoremap <silent> h       :call MoveAndFoldLeft()<cr>
+
+colorscheme molokai
